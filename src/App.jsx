@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./index.css";
 
 const api = "https://jsonplaceholder.typicode.com/users";
 
@@ -17,7 +16,10 @@ function App() {
   return (
     <div>
       {data?.map((user) => (
-        <div className="mt-[50px] border p-5 text-[red]" key={user.id}>
+        <div
+          className="mt-[10px] border p-5 text-[red] w-[500px]"
+          key={user.id}
+        >
           {user.name}, {user.username}, {user.email}
         </div>
       ))}
